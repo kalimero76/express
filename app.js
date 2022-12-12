@@ -1,14 +1,9 @@
-const catalogRouter = require( "./routes/catalog" ); // Import routes for "catalog" area of site
-const compression = require( "compression" );
-
-
 const express = require( "express" );
 const mysql = require( 'mysql' );
 const cors = require( 'cors' );
 const bodyParser = require( 'body-parser' );
 
 const app = express();
-app.use( compression() )
 app.use( cors() );
 app.use( bodyParser.json() );
 const port = 3000;
