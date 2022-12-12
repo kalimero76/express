@@ -6,7 +6,8 @@ const bodyParser = require( 'body-parser' );
 const app = express();
 app.use( cors() );
 app.use( bodyParser.json() );
- 
+const port = 3000;
+app.listen( port)
 
 // connection to the database
 try {
