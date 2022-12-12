@@ -20,5 +20,5 @@
   "engines": {
       "node": "v18.10.0"
     },
-    "private": true,
+   
 }
