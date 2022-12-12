@@ -6,8 +6,29 @@ const bodyParser = require( 'body-parser' );
 const app = express();
 app.use( cors() );
 app.use( bodyParser.json() );
-const port = 3000;
-app.listen( port)
+
+const port = process.env.PORT || 5002
+
+
+// addData()
+// app.use(cors())
+
+//middleware
+app.use( express.json() )
+// app.disable('view cache');
+
+//router 
+app.get( "/", ( req, res ) => {
+    res.send( 'hw' );
+} )
+
+
+app.listen( port, () => {
+    console.log( 'server started' );
+} )
+
+
+
 
 // connection to the database
 try {
